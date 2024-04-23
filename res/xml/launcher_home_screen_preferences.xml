@@ -29,7 +29,6 @@
             android:title="@string/settings_lock_layout_title"
             android:summaryOn="@string/settings_lock_layout_summary_on"
             android:summaryOff="@string/settings_lock_layout_summary_off"
-            android:layout="@layout/top_level_preference_top_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -40,7 +39,6 @@
             android:persistent="true"
             launcher:logIdOn="613"
             launcher:logIdOff="614"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -49,7 +47,6 @@
             android:summary="@string/pref_sleep_gesture_summary"
             android:defaultValue="true"
             android:persistent="true"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -57,7 +54,6 @@
             android:title="@string/allow_wallpaper_scrolling"
             android:summary="@string/allow_wallpaper_scrolling_summary"
             android:defaultValue="true"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -65,7 +61,6 @@
             android:title="@string/allow_wallpaper_zooming"
             android:summary="@string/allow_wallpaper_zooming_summary"
             android:defaultValue="true"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -73,7 +68,6 @@
             android:title="@string/short_parallax_title"
             android:summary="@string/short_parallax_summary"
             android:defaultValue="false"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -81,8 +75,7 @@
             android:title="@string/single_page_center_title"
             android:summary="@string/single_page_center_summary"
             android:defaultValue="false"
-            launcher:iconSpaceReserved="false"
-            android:layout="@layout/top_level_preference_bottom_card" />
+            launcher:iconSpaceReserved="false" />
 
     </PreferenceCategory>
 
@@ -94,7 +87,6 @@
             android:title="@string/title_show_google_app"
             android:summary="@string/pref_show_google_now_summary"
             android:defaultValue="true"
-            android:layout="@layout/top_level_preference_top_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -102,7 +94,6 @@
             android:title="@string/show_statusbar_title"
             android:defaultValue="true"
             android:persistent="true"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -110,7 +101,6 @@
             android:title="@string/show_top_shadow"
             android:defaultValue="true"
             android:persistent="true"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
         
         <SwitchPreferenceCompat
@@ -118,7 +108,6 @@
             android:title="@string/desktop_show_labels"
             android:defaultValue="true"
             android:persistent="true"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -126,7 +115,6 @@
             android:title="@string/hotseat_bg_title"
             android:summary="@string/hotseat_bg_summary"
             android:defaultValue="false"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
 
         <com.android.launcher3.settings.preferences.CustomSeekBarPreference
@@ -137,8 +125,7 @@
             android:min="0"
             settings:units="%"
             android:dependency="pref_show_hotseat_bg"
-            android:defaultValue="40"
-            settings:customlayout="@layout/preference_custom_seekbar_bottom" />
+            android:defaultValue="40" />
 
     </PreferenceCategory>
 
@@ -151,7 +138,6 @@
             android:summary="@string/show_quickspace_summary"
             android:defaultValue="true"
             android:persistent="true"
-            android:layout="@layout/top_level_preference_top_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -161,7 +147,6 @@
             android:dependency="pref_show_quickspace"
             android:defaultValue="true"
             android:persistent="true"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -171,7 +156,6 @@
             android:dependency="pref_show_quickspace"
             android:defaultValue="false"
             android:persistent="true"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -181,7 +165,6 @@
             android:dependency="pref_show_quickspace"
             android:defaultValue="true"
             android:persistent="true"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -191,7 +174,6 @@
             android:dependency="pref_show_quickspace"
             android:defaultValue="true"
             android:persistent="true"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -201,7 +183,6 @@
             android:dependency="pref_quickspace_weather"
             android:defaultValue="false"
             android:persistent="true"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -211,8 +192,7 @@
             android:dependency="pref_quickspace_weather"
             android:defaultValue="true"
             android:persistent="true"
-            launcher:iconSpaceReserved="false"
-            android:layout="@layout/top_level_preference_bottom_card" />
+            launcher:iconSpaceReserved="false" />
 
     </PreferenceCategory>
 
@@ -224,7 +204,6 @@
             android:title="@string/dock_search_title"
             android:summary="@string/dock_search_summary"
             android:defaultValue="true"
-            android:layout="@layout/top_level_preference_top_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
@@ -233,14 +212,12 @@
             android:summary="@string/dock_music_search_summary"
             android:dependency="pref_dock_search"
             android:defaultValue="false"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
             android:key="pref_dock_theme"
             android:title="@string/dock_theme_title"
             android:summary="@string/dock_theme_summary"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />
 
         <com.android.launcher3.settings.preferences.CustomSeekBarPreference
@@ -251,8 +228,7 @@
             android:min="0"
             settings:interval="5"
             settings:units="%"
-            android:defaultValue="100"
-            settings:customlayout="@layout/preference_custom_seekbar_bottom" />
+            android:defaultValue="100" />
 
     </PreferenceCategory>
 

@@ -29,16 +29,14 @@
             android:max="100"
             android:min="0"
             settings:units="%"
-            android:defaultValue="40"
-            settings:customlayout="@layout/preference_custom_seekbar_top" />
+            android:defaultValue="40" />
 
         <SwitchPreferenceCompat
             android:key="pref_recents_meminfo"
             android:title="@string/recents_meminfo_title"
             android:defaultValue="false"
             android:persistent="true"
-            launcher:iconSpaceReserved="false"
-            android:layout="@layout/top_level_preference_bottom_card" />
+            launcher:iconSpaceReserved="false" />
    </PreferenceCategory>
 
     <PreferenceCategory
@@ -49,15 +47,13 @@
             android:title="@string/recents_clear_all_title"
             android:defaultValue="true"
             android:persistent="true"
-            launcher:iconSpaceReserved="false"
-            android:layout="@layout/top_level_preference_top_card" />
+            launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
             android:key="pref_recents_kill_app"
             android:title="@string/recents_kill_app"
             android:defaultValue="false"
             android:persistent="true"
-            android:layout="@layout/top_level_preference_middle_card"
             launcher:iconSpaceReserved="false" />            
 
         <SwitchPreferenceCompat
@@ -65,32 +61,28 @@
             android:title="@string/recents_lens_title"
             android:defaultValue="false"
             android:persistent="true"
-            launcher:iconSpaceReserved="false"
-            android:layout="@layout/top_level_preference_middle_card" />
+            launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
             android:key="pref_recents_lock"
             android:title="@string/recents_lock_title"
             android:defaultValue="true"
             android:persistent="true"
-            launcher:iconSpaceReserved="false"
-            android:layout="@layout/top_level_preference_middle_card" />            
+            launcher:iconSpaceReserved="false" />            
 
         <SwitchPreferenceCompat
             android:key="pref_recents_screenshot"
             android:title="@string/recents_screenshot_title"
             android:defaultValue="true"
             android:persistent="true"
-            launcher:iconSpaceReserved="false"
-            android:layout="@layout/top_level_preference_middle_card" />
+            launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
             android:key="pref_recents_shake_clear_all"
             android:title="@string/recents_shake_clear_all_title"
             android:defaultValue="true"
             android:persistent="true"
-            launcher:iconSpaceReserved="false"
-            android:layout="@layout/top_level_preference_bottom_card" />
+            launcher:iconSpaceReserved="false" />
     </PreferenceCategory>
 
 </androidx.preference.PreferenceScreen>
