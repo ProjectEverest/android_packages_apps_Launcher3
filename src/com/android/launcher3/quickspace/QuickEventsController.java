@@ -86,7 +86,6 @@ public class QuickEventsController {
     private boolean mEventNowPlaying = false;
     private String mNowPlayingTitle;
     private String mNowPlayingArtist;
-    private boolean mClientLost = true;
     private boolean mPlayingActive = false;
 
     public QuickEventsController(Context context) {
@@ -163,7 +162,7 @@ public class QuickEventsController {
 
     public void nowPlayingEvent() {
         if (mEventNowPlaying) {
-            boolean infoExpired = !mPlayingActive || mClientLost;
+            boolean infoExpired = !mPlayingActive;
             if (infoExpired) {
                 mIsQuickEvent = false;
                 mEventNowPlaying = false;
@@ -404,10 +403,9 @@ public class QuickEventsController {
         return r.nextInt((max - min) + 1) + min;
     }
 
-    public void setMediaInfo(String title, String artist, boolean clientLost, boolean activePlayback) {
+    public void setMediaInfo(String title, String artist, boolean activePlayback) {
         mNowPlayingTitle = title;
         mNowPlayingArtist = artist;
-        mClientLost = clientLost;
         mPlayingActive = activePlayback;
     }
 
